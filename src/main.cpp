@@ -32,4 +32,47 @@ void setup() {
  * This function continuously runs and changes the LED colors
  * every 1 second using digitalWrite() and delay().
  */
+void loop() {
 
+  /// Display Red
+  digitalWrite(red_led, HIGH);
+  digitalWrite(green_led, LOW);
+  digitalWrite(blue_led, LOW);
+  delay(1000);
+
+/// Display Green
+  digitalWrite(red_led, LOW);
+  digitalWrite(green_led, HIGH);
+  digitalWrite(blue_led, LOW);
+  delay(1000);
+
+  /// Display Blue
+  digitalWrite(red_led, LOW);
+  digitalWrite(green_led, LOW);
+  digitalWrite(blue_led, HIGH);
+  delay(1000);
+
+  /// Display Brown (Red + Green)
+  digitalWrite(red_led, HIGH);
+  digitalWrite(green_led, HIGH);
+  digitalWrite(blue_led, LOW);
+  delay(1000);
+
+  /// Display Purple (Red + Blue)
+  digitalWrite(red_led, HIGH);
+  digitalWrite(green_led, LOW);
+  digitalWrite(blue_led, HIGH);
+  delay(1000);
+
+  /// Display Cyan (Green + Blue)
+  digitalWrite(red_led, LOW);
+  digitalWrite(green_led, HIGH);
+  digitalWrite(blue_led, HIGH);
+  delay(1000);
+
+  /// Display White (Red + Green + Blue)
+  digitalWrite(red_led, HIGH);
+  digitalWrite(green_led, HIGH);
+  digitalWrite(blue_led, HIGH);
+  delay(1000); 
+}
